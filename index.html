@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title</title>
+</head>
+<script>
+function showAlertImageAndSound() {
+var audio = new Audio('Penguin sound.mp3');
+audio.play();
+var popup = window.open("","Popup","width=500,height=500");
+popup.document.write('<html><head><title>Popup GIF</title></head><body><img src="penguin.gif"></body></html>');
+}
+</script>
+<style>
+ ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  width:100%;
+  background-color:#f1f1f1;
+  border: 1px solid #000;
+  overflow:hidden; 
+
+  }
+li {
+  text-align:center;
+  float:left;
+   border-right: 1px solid black;
+   width:24%; 
+}
+li:last-child {
+    border-right: none;
+}
+
+
+
+li a {
+  display:block;
+  color:#000;
+  padding:8px 16px;
+  text-decoration:none;
+  }
+  
+  li a:hover{
+  background-color:#555;
+  color:white;
+  }
+  
+  li a.active{
+  background-color:#4CAF50;
+  color:white;
+  }
+   header{
+ background:url("sanfangqixiang.jpg");
+ background-size:cover;
+ color:white;
+ text-align:center;
+ height:230px;
+ font-size:23px;
+ padding:20px;
+ }
+</style>
+</head>
+<body>
+<header><h1>Explore Fuzhou City with Charles</h1>
+<p>Your travel guide to history,food and hidden gems</p></header>
+<ul>
+<li><a class="active" href="Charles5.html">Home</a></li>
+<li><a href="Gallery.html">Gallery</a></li>
+<li><a href="Booking.html">Booking</a></li>
+</ul>
+<main>
+<p>Fuzhou (abbreviated as “榕”), the capital and transportation hub of Fujian Province, is a coastal city in the southeastern China. It faces China’s Taiwan Island across the East China Sea.
+
+Fuzhou remains largely undiscovered and seriously underrated by Western travelers, but those taking a tour here are in for a real treat. With a long history of over 2,000 years, Fuzhou is a national historical and cultural city. It was once the gateway of Ancient Maritime Silk Road and one of the firstly opened coastal cities in China. Historical sites, ancient dwellings, mottled alleys and centuries-old temples are scattered everywhere in the city. Besides, thanks to its unbeatable location of settling along the coastline of China, Fuzhou also welcomes the worldwide visitors with its delicious seafood and stunning islands and beaches.</p>
+
+<center><video width="500px" height="300px" controls>
+	<source src="fuzhou.mp4" type="video/mp4">
+</video></center>
+</body>
+</html>
