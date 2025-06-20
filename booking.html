@@ -1,0 +1,126 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title</title>
+<style>
+form#myform{
+	background:#9cbc2c;
+	border-radius:10px;
+	padding:20px;
+	width:400px;
+}
+form#myform fieldset{
+	background:#b9cf6a;
+	border-color:#e3ebc3;
+	border-style:solid;
+	border-width:2px;
+	border-radius:5px;
+	margin-bottom:15px;
+}
+form#myform legend{
+	color:#384313;
+	font-size:18px;
+	font-weight:bold;
+	padding-bottom:5px;
+}
+form#myform input[type=submit]{
+	background:#384313;
+	border:none;
+	border-radius:20px;
+	font:18px Georigia,"times New Roman",Times,
+	serif;
+	color:#ffffff;
+	padding:10px 25px;
+	text-transform:uppercase;
+}
+ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  width:100%;
+  background-color:#f1f1f1;
+  border: 1px solid #000;
+  overflow:hidden; 
+
+  }
+li {
+  text-align:center;
+  float:left;
+   border-right: 1px solid black;
+   width:24%; 
+}
+li:last-child {
+    border-right: none;
+}
+
+
+
+li a {
+  display:block;
+  color:#000;
+  padding:8px 16px;
+  text-decoration:none;
+  }
+  
+  li a:hover{
+  background-color:#555;
+  color:white;
+  }
+  
+  li a.active{
+  background-color:#4CAF50;
+  color:white;
+  }
+ header{
+ background:url("sanfangqixiang.jpg");
+ background-size:cover;
+ color:white;
+ text-align:center;
+ height:230px;
+ font-size:23px;
+ padding:20px;
+ }
+</style>
+</head>
+<body>
+<header><h1>Tourist Information</h1></header>
+<ul>
+<li><a href="Charles5.html">Home</a></li>
+<li><a href="Gallery.html">Gallery</a></li>
+<li><a class="active" href="Booking.html">Booking</a></li>
+</ul>
+<center><form id="myform" action="form_action.php" method="get">
+	<fieldset>
+		<legend>Personal details</legend>
+		Full name<input type="text" name="fn" required><br><br>
+		Email<input type="tel" name="phone" placeholder="eg.1135731267" required><br><br>
+		phone<input type="tel" name="phone" placeholder="+86" required><br><br>	
+		Nationality<input type"password"><br><br>
+	</fieldset>
+	<fieldset>
+	<legend>tour Details</legend>
+	Tour Date<input name="dob" type="dak"><br><br>
+	Group Size<input type"password"><br><br>
+	Tour Duration:<select name="Tour Duration">
+		<option>Tour Duration<option>
+		<option value="1day">1day</option>
+		<option value="2days">2days</option>
+		<option value="week">week</option>
+		<option value="year">year</option>
+	</select><br><br>
+	preferred Language<input type="radio" name="gender" value="male">Mandarin
+	<input type="radio" name="gender" value="female">English<br><br>
+	</fieldset>
+	<fieldset>
+	<legend>Places to visit</legend>
+	Select attraction:<br><br>
+	<input type="checkbox" name"vehicle" value"Sanfang Qixiang">Sanfang Qixiang<br>
+	<input type="checkbox" name"vehicle" value"Jinshan Temple">Jinshan Temple<br>
+	<input type="checkbox" name"vehicle" value"West Lake Park">West Lake Park<br>
+	<input type="checkbox" name"vehicle" value"Pingtan Island">Pingtan Island<br><br>
+	Special Requests:<textarea name="adress" cols=30 rows=8 required></textarea><br><br>
+	</fieldset>
+	<input type="submit" value="BOOK TOUR">
+	</form>	</center>
+</body>
+</html>
